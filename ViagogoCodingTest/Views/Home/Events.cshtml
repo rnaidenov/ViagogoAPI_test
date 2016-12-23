@@ -1,0 +1,52 @@
+﻿@model ViagogoCodingTest.ViewModels.EventsViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/mainView.css" rel="stylesheet" />
+ 
+    <title>Index</title>
+</head>
+<body>
+
+    <h1>Events for <span id="artistName">@Model.artist.name</span></h1>
+
+    @foreach (var upcEvent in Model.artistEvents)
+    {
+        <div class="events">
+            <div class="eventContainer">
+                <div id="dateContainer">
+                    <div>
+                        <p class="dateText">@upcEvent.dayOfWeek</p>
+                    </div>
+                    <span id="lineSeparator"></span>
+                    <div>
+                        <p class="dateText">@upcEvent.dayOfMonth @upcEvent.month</p>
+                    </div>
+                </div>
+                <div class="eventInfoContainer">
+                    <p id="eventName"> @upcEvent.name</p>
+                    <p id="venueName"><span id="atVenue">@@</span> @upcEvent.venue</p>
+                    <p id="location">@upcEvent.city, @upcEvent.country</p>
+                </div>
+                <div id="viewTicketsContainer">
+                    <p id="minPriceTicket">From @upcEvent.minTicketPrice</p>
+                    <button class="btn btn-sm">View tickets</button>
+                </div>
+            </div>
+        </div>
+    }
+                
+</body>
+</html>
+
+<script src="~/Scripts/jquery-1.9.1.min.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/animations.js"></script>
