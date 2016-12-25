@@ -37,7 +37,7 @@
                 </div>
                 <div id="viewTicketsContainer">
                     <p id="minPriceTicket">From @upcEvent.minTicketPrice</p>
-                    <button class="btn btn-sm" onclick="location.href='@Url.Action("Tickets","Home",new { ticketId = @upcEvent.id})'">View tickets</button>
+                    <button class="btn btn-sm" onclick="location.href='@Url.Action("Tickets","Home",new { eventId = @upcEvent.id})'">View tickets</button>
 
                 </div>
             </div>

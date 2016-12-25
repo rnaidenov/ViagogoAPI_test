@@ -36,39 +36,43 @@
             </p>
 
 
-            <input type="hidden" id="myHiddenValue" value ="@Model.numberTickets"/>
+            <input type="hidden" id="myHiddenValue" value="@Model.numberTickets" />
             <div id="numberTicketsWrap">
                 <span id="numberTickets">{{counter}}</span>
             </div>
             <span><img class="newTicket"</span>
 
-
-            <div id="ticketsList">
+            <div id="ticketsListHeader">
                 <span id="sectionLabel">Section</span>
                 <span id="priceLabel">Price</span>
             </div>
-            
 
-            <p>{{c.listings[0].section}}</p>
+            <div  dir-paginate="listing in filteredData | itemsPerPage:10" id="eventsListWrap">
+                <div id="ticketOption">
+                    <span id="seatingLabel">{{listing.section}}</span>
+                    <span id="ticketQuantityLabel">{{ticketsNeeded(listing)}}</span>
+                    <span id="ticketPriceLabel">{{listing.price}}</span>
+                </div>
+                <div id="buyWrap">
+                   
+                </div>
+            </div>
 
-        
-    <div id="ticketOption" ng-repeat="listing in filteredData">
-        <span id="seatingLabel">{{listing.section}}</span>
-        <span id="ticketQuantityLabel">{{listing.ticketsAvailable}}</span>
-        <span id="ticketPriceLabel">{{listing.price}}</span>
-    </div>
-          
-               
-            
+            <dir-pagination-controls
+                max-size="5"                     
+                direction-links="true"
+                boundary-links="true">
+            </dir-pagination-controls>
+         
+
         </div>
-
-    </div>
 
     
 </body>
 </html>
 
 <script src="~/Scripts/angular.min.js"></script>
+<script src="~/Scripts/bower_components/angularUtils-pagination/dirPagination.js"></script>
 <script src="~/Scripts/jquery-1.9.1.min.js"></script>
 <script src="~/Scripts/bootstrap.min.js"></script>
 <script src="~/Scripts/listingsView.js"></script>

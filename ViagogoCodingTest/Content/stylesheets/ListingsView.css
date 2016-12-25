@@ -59,48 +59,107 @@
     color:#422040;
 }
 
-#ticketsList {
+#ticketsListHeader {
     width:500px;
     height:30px;
     margin:auto;
     margin-top:40px;
-    background-color:#4F6D7A;
+    background-color:#18314F;
+    position:relative;
+}
+
+#eventsListWrap {
+    overflow:hidden;
     position:relative;
 }
 
 #ticketOption {
     width:500px;
-    height:60px;
-    background-color:#5B7D8C;
+    height:70px;
+    background-color:#384E77;
     border-bottom-color:white;
     position:relative;
     margin:auto;
+    padding-top:10px;
+    z-index:1;
+}
+
+#buyWrap {
+    width:150px;
+    height:70px;
+    left:-50px;
+    background-color:darkseagreen;
+    position:relative;
+    margin-top:-70px;
+    margin-left:780px;
+    -webkit-transition: left 1s;
+    -moz-transition: left 1s;
+    -o-transition: left 1s;
+    transition: left 1s;
+    z-index:-1;
 }
 
 
+#ticketOption:hover + #buyWrap {
+    left: 30px;
+}
 
 #seatingLabel {
-    padding:10px 380px 0px 0px;
-    color:#084C61;
-    font-size:13px;
+    color:#0E1B2C;
+    font-size:15px;
+    margin-left:-350px;
+    float:none;
+    position:relative;
 }
 
 #sectionLabel {
     color:white;
     position:absolute;
     margin-top:5px;
-    margin-left:-215px;
+    margin-left:-200px;
 }
 
+/*#37000A*/
+
 #ticketQuantityLabel {
-    position:absolute;
-    margin-left:-220px;
-    color:white;
+    position:relative;
+    display:block;
+    margin-left:25px;
+    margin-top:-18px;
+    float:none;
+    color:#450E24;
+    font-size:12px;
+}
+
+
+/*
+#ticketQuantityLabel-warn {
+    position:relative;
+    display:block;
+    margin-left:25px;
+    margin-top:-18px;
+    float:none;
+    color:#450E24;
+    font-size:15px;
+    animation: warn 1s linear infinite;
+}
+
+@keyframes warn {  
+  50% { opacity: 0; }
+}*/
+
+#ticketPriceLabel{
+    color:#0E1B2C;
+    position:relative;
+    margin-top:-19px;
+    margin-left:395px;
+    display:block;
+
 }
 
 #priceLabel {
     color:white;
-    margin-left:210px;
+    margin-left:180px;
     position:absolute;
     margin-top:5px;
 }

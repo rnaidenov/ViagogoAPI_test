@@ -1,4 +1,4 @@
-﻿var app = angular.module("app", []);
+﻿var app = angular.module("app", ['angularUtils.directives.dirPagination']);
 
 app.service ("DataService",["$http",function ($http) {
 
@@ -18,16 +18,20 @@ app.service ("DataService",["$http",function ($http) {
         filterData : function (data) {
             var filteredData = [];
             data.forEach(function (listing) {
-                if (listing.ticketsAvailable === quantityNeeded) {
-                filteredData.push(listing);
-                }
-                else if (quantityNeeded === "Any") {
+                var availableTickets = listing.ticketsAvailable;
+                if (quantityNeeded === "Any") {
                     filteredData = data;
                 }
                 else if (quantityNeeded === "5+") {
-                    if (listing.ticketsAvailable > 5) {
+                    if (availableTickets > 5) {
                         filteredData.push(listing);
                     }
+                }
+                else if (quantityNeeded <= availableTickets) {
+                    filteredData.push(listing);
+                }
+                if (availableTickets === quantityNeeded) {
+                    listing.lastAvailable = true;
                 }
                 dataAfterFilter = filteredData;
             })
@@ -74,11 +78,13 @@ app.service("TicketService", function () {
     }
 })
 
-
 app.controller("myCtrl", function ($scope,DataService,TicketService) {
     var listings;
 
     $scope.filteredData = listings;
+    $scope.ticketsNeeded;
+
+
 
     (function getData() {
         DataService.loadData().then(function (res) {
@@ -86,6 +92,32 @@ app.controller("myCtrl", function ($scope,DataService,TicketService) {
             $scope.filteredData = res;
         })
     })();
+
+    $scope.ticketsNeeded = function (listing) {
+        if ($scope.counter === 1 && listing.lastAvailable) {
+            return "Last available ticket";
+        }
+        else if ($scope.counter === "Any" || $scope.counter === "5+") {
+            var ticket;
+            if (listing.ticketsAvailable === 1) {
+                ticket = "ticket";
+            } else {
+                ticket = "tickets";
+            }
+            return listing.ticketsAvailable + " available " + ticket;
+        }
+        else if (listing.lastAvailable && $scope.counter !== 1) {
+            return "Last " + listing.ticketsAvailable + " available tickets";
+        }
+        else {
+            if ($scope.counter === 1) {
+                return $scope.counter + " available ticket";
+            }
+            else {
+                return $scope.counter + " available tickets";
+            }
+        }
+    }
 
     $scope.counter = "Any";
 
@@ -110,7 +142,6 @@ app.controller("myCtrl", function ($scope,DataService,TicketService) {
         changeTicketNum(false);
     }
 });
-
 
 $(".arrow-up").click(function () {
     $(".newTicket").attr("src", "../Content/icons/ticketIconAdd.png");

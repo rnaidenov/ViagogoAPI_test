@@ -7,15 +7,13 @@ using System.Web.Mvc;
 using ViagogoCodingTest.Models;
 using ViagogoCodingTest.ViewModels;
 using Newtonsoft.Json;
-using System.Web.Script.Serialization;
+using GogoKit.Models.Response;
 
 namespace ViagogoCodingTest.Controllers
 {
     public class HomeController : Controller
     {
-
         
-       
 
         public async Task<ActionResult> Events ()
         {
@@ -37,29 +35,25 @@ namespace ViagogoCodingTest.Controllers
             return View(events);
         }
 
-        public async Task<ActionResult> Tickets (int ticketId)
+        public async Task<ActionResult> Tickets (int eventId)
         {
-
             ViagogoAPI viagogo = new ViagogoAPI();
             TicketsViewModel tickets = new TicketsViewModel();
-            tickets.listings = await viagogo.getListings(ticketId);
+            tickets.listings = await viagogo.getListings(eventId);
+            TempData["listings"] = tickets.listings;
             tickets.listingsEvent = await viagogo.getListingsEvent(tickets.listings[0].EventLink);
-            tickets.numberTickets = 3;
             tickets.getEventDate();
             return View(tickets);
         }
         
         
-        public async Task<ActionResult> Listings()
+        public ActionResult Listings()
         {
-            ViagogoAPI viagogo = new ViagogoAPI();
-            TicketsViewModel tickets = new TicketsViewModel();
-            tickets.listings = await viagogo.getListings(2006283);
-
+            var listings = (IReadOnlyList<Listing>) TempData["listings"];
             List<CustomListing> ticketListings = new List<CustomListing>();
-            foreach (var listing in tickets.listings)
+            foreach (var listing in listings)
             {
-                ticketListings.Add(new CustomListing(listing.Seating.Section, listing.TicketPrice.Display, listing.NumberOfTickets.Value));
+                ticketListings.Add(new CustomListing(listing.Seating.Section, listing.TicketPrice.Amount.Value,listing.TicketPrice.Currency, listing.NumberOfTickets.Value));
             }
             var json = JsonConvert.SerializeObject(ticketListings);
             return Json(json, JsonRequestBehavior.AllowGet);
