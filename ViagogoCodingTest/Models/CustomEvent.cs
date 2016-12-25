@@ -4,13 +4,14 @@ using System.Linq;
 using System.Web;
 using GogoKit.Models.Request;
 using System.Globalization;
+using GogoKit.Models.Response;
 
 namespace ViagogoCodingTest.Models
 {
     public class CustomEvent
     {
         public int id { get; set; }
-        public string name {get;set;}
+        public string name { get; set; }
         public string dayOfWeek { get; set; }
         public int dayOfMonth { get; set; }
         public string month { get; set; }
@@ -18,6 +19,7 @@ namespace ViagogoCodingTest.Models
         public string city { get; set; }
         public string country { get; set; }
         public string minTicketPrice { get; set; }
+        public IReadOnlyList<Listing> ticketListings { get; set; }
 
         public CustomEvent (int id, string name, DateTimeOffset date,string venueName, string city,string country,string minTicketPrice)
         {
@@ -45,7 +47,6 @@ namespace ViagogoCodingTest.Models
             CultureInfo uk = CultureInfo.GetCultureInfo("en-GB");
 
         }
-
 
     }
 }

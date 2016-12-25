@@ -9,13 +9,12 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="~/Content/mainView.css" rel="stylesheet" />
+    <link href="~/Content/stylesheets/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/stylesheets/mainView.css" rel="stylesheet" />
  
     <title>Index</title>
 </head>
 <body>
-
     <h1>Events for <span id="artistName">@Model.artist.name</span></h1>
 
     @foreach (var upcEvent in Model.artistEvents)
@@ -38,12 +37,12 @@
                 </div>
                 <div id="viewTicketsContainer">
                     <p id="minPriceTicket">From @upcEvent.minTicketPrice</p>
-                    <button class="btn btn-sm">View tickets</button>
+                    <button class="btn btn-sm" onclick="location.href='@Url.Action("Tickets","Home",new { ticketId = @upcEvent.id})'">View tickets</button>
+
                 </div>
             </div>
         </div>
     }
-                
 </body>
 </html>
 

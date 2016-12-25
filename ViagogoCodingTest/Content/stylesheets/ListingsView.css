@@ -1,0 +1,148 @@
+﻿body {
+}
+
+#ticketIcon {
+   width:25px;
+   height:25px;
+   margin-top:-5px;
+   margin-left:2px;
+}
+
+.newTicket {
+   visibility:hidden; 
+   width:20px;
+   height:20px;
+   margin-top:-20px;
+   margin-left:-9px;
+   margin-bottom:0px;
+   position:absolute;
+   opacity: 1;
+}
+
+.newTicket-add {
+   width:20px;
+   height:20px;
+   margin-top:-25px;
+   margin-left:-9px;
+   margin-bottom:0px;
+   position:absolute;
+   opacity: 0;
+   transition: all 1s ease-in-out;
+   -moz-transition: all 1s ease-in-out;
+   -webkit-transition: all 1s ease-in-out;
+}
+
+.newTicket-remove {
+   width:20px;
+   height:20px;
+   margin-top:-15px;
+   margin-left:-9px;
+   margin-bottom:0px;
+   position:absolute;
+   opacity: 0;
+   transition: all 1s ease-in-out;
+   -moz-transition: all 1s ease-in-out;
+   -webkit-transition: all 1s ease-in-out;
+}
+
+
+#ticketCounterWrap {
+    margin-top:50px;
+}
+
+#numberTicketsWrap {
+    padding-top:10px;
+}
+
+#numberTickets{
+    font-size:30px;
+    color:#422040;
+}
+
+#ticketsList {
+    width:500px;
+    height:30px;
+    margin:auto;
+    margin-top:40px;
+    background-color:#4F6D7A;
+    position:relative;
+}
+
+#ticketOption {
+    width:500px;
+    height:60px;
+    background-color:#5B7D8C;
+    border-bottom-color:white;
+    position:relative;
+    margin:auto;
+}
+
+
+
+#seatingLabel {
+    padding:10px 380px 0px 0px;
+    color:#084C61;
+    font-size:13px;
+}
+
+#sectionLabel {
+    color:white;
+    position:absolute;
+    margin-top:5px;
+    margin-left:-215px;
+}
+
+#ticketQuantityLabel {
+    position:absolute;
+    margin-left:-220px;
+    color:white;
+}
+
+#priceLabel {
+    color:white;
+    margin-left:210px;
+    position:absolute;
+    margin-top:5px;
+}
+
+.form-control {
+    width:40px;
+    height:40px;
+}
+
+#counter {
+    position:relative;
+}
+
+
+.arrow-up {
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid black;
+  border-bottom-color:palevioletred;
+  margin-right:5px;
+  position:absolute;
+  margin-top:-18px;
+  margin-left:12px;
+}
+
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #f00;
+   border-top-color:cornflowerblue;
+  margin-top:28px;
+  position:absolute;
+  margin-left:-19px;
+
+}
+
+#listingsWrap {
+    text-align:center;
+    margin:auto;
+    padding-top:50px;
+}

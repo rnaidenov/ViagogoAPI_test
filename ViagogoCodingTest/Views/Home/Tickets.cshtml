@@ -1,0 +1,75 @@
+﻿@model ViagogoCodingTest.ViewModels.TicketsViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html ng-app="app">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/stylesheets/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/stylesheets/ListingsView.css" rel="stylesheet" />
+    <title>Tickets</title>
+</head>
+<body ng-controller="myCtrl as c">
+
+    <div id="listingsWrap">
+        <h1>@Model.listingsEvent.Name</h1>
+        <h2>@Model.listingsEvent.Venue.Name</h2>
+        <p>@Model.listingsEventDate</p>
+
+        
+        <div id="ticketCounterWrap">
+            <p>
+                How many
+                <span id="counter">
+                    <span class="arrow-up" ng-click="c.addTicket()"></span>
+                    <span>
+                        <img id="ticketIcon" src="~/Content/icons/ticketIcon.png" />
+                    </span>
+                    <span class="arrow-down" ng-click="c.removeTicket()"></span>
+                </span>
+
+                tickets?
+            </p>
+
+
+            <input type="hidden" id="myHiddenValue" value ="@Model.numberTickets"/>
+            <div id="numberTicketsWrap">
+                <span id="numberTickets">{{counter}}</span>
+            </div>
+            <span><img class="newTicket"</span>
+
+
+            <div id="ticketsList">
+                <span id="sectionLabel">Section</span>
+                <span id="priceLabel">Price</span>
+            </div>
+            
+
+            <p>{{c.listings[0].section}}</p>
+
+        
+    <div id="ticketOption" ng-repeat="listing in filteredData">
+        <span id="seatingLabel">{{listing.section}}</span>
+        <span id="ticketQuantityLabel">{{listing.ticketsAvailable}}</span>
+        <span id="ticketPriceLabel">{{listing.price}}</span>
+    </div>
+          
+               
+            
+        </div>
+
+    </div>
+
+    
+</body>
+</html>
+
+<script src="~/Scripts/angular.min.js"></script>
+<script src="~/Scripts/jquery-1.9.1.min.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/listingsView.js"></script>
+<script src="~/Scripts/animations.js"></script>

@@ -1,6 +1,7 @@
 ﻿using GogoKit;
 using GogoKit.Models.Request;
 using GogoKit.Models.Response;
+using HalKit.Models.Response;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,7 +33,7 @@ namespace ViagogoCodingTest.Models
         // decide what to do with the SearchRequest
         public async Task<int> getCatId (string artistName)
         {
-            var request = new SearchResultRequest { Embed = new[] { SearchResultEmbed.Category, SearchResultEmbed.Event } };
+            var request = new SearchResultRequest { Embed = new[] { SearchResultEmbed.Category, SearchResultEmbed.Event} };
             var searchResult = await client.Search.GetAllAsync(artistName, request);
             return searchResult[0].Category.Id.Value;
         }
@@ -43,8 +44,17 @@ namespace ViagogoCodingTest.Models
             return events;
         }
         
+        public async Task<IReadOnlyList<Listing>> getListings (int eventId)
+        {
+            var listings = await client.Listings.GetAllByEventAsync(eventId);
+            return listings;
+        }
 
-
+        public async Task<Event> getListingsEvent (Link eventLink)
+        {
+            var listingsEvent = await client.Hypermedia.GetAsync<Event>(eventLink);
+            return listingsEvent;
+        }
 
     }
 }
