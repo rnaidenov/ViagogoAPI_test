@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViagogoCodingTest", "ViagogoCodingTest\ViagogoCodingTest.csproj", "{5E77980F-EB2E-4E21-9D88-6C42365EF313}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViagogoCodingTestTests1", "ViagogoCodingTestTests1\ViagogoCodingTestTests1.csproj", "{66246EC0-DD57-4A0D-AD37-9A057590527E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "ViagogoCodingTestTests1\Tests.csproj", "{66246EC0-DD57-4A0D-AD37-9A057590527E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
