@@ -26,12 +26,15 @@ namespace ViagogoCodingTest.Controllers
             events.artist = peteTong; 
             events.artistEvents = new List<CustomEvent>();
             
+
+            
             foreach (var upcEvent in peteTong.eventsList)
             {    
                 var customEvent = new CustomEvent(upcEvent.Id.Value, upcEvent.Name, upcEvent.StartDate.Value, upcEvent.Venue.Name, upcEvent.Venue.City, upcEvent.Venue.Country.Name,upcEvent.MinTicketPrice.Display);
                 events.artistEvents.Add(customEvent);         
             }
-
+            events.getCountriesEvents();
+            events.getCheapestEvents();
             return View(events);
         }
 

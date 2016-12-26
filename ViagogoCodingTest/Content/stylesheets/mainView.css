@@ -45,6 +45,35 @@
     transition: all .2s ease-in-out;
 }
 
+.eventContainer-cheapestEvent {
+    opacity:0;
+    background-color: #D6D5C9;
+    width: 400px;
+    height: 70px;
+    position:relative;
+    margin:auto;
+    transition: all .2s ease-in-out;
+}
+
+#buyWrap {
+    z-index:1;
+    opacity:1;
+    text-align:center;
+    font-family: 'Raleway', sans-serif;
+    font-size:15px;
+    padding-top:14px;
+    width:150px;
+    height:70px;
+    background-color:darkseagreen;
+    position:absolute;
+    margin-top:0px;
+    margin-left:250px;
+    -webkit-transition: left 1s;
+    -moz-transition: left 1s;
+    -o-transition: left 1s;
+    transition: left 1s;   
+}
+
 .eventContainer:hover {
     transform:scale(1.1);
 }

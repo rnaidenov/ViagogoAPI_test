@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width" />
     <link href="~/Content/stylesheets/bootstrap.min.css" rel="stylesheet" />
     <link href="~/Content/stylesheets/mainView.css" rel="stylesheet" />
- 
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <title>Index</title>
 </head>
 <body>
@@ -20,7 +20,7 @@
     @foreach (var upcEvent in Model.artistEvents)
     {
         <div class="events">
-            <div class="eventContainer">
+            <div class="@(upcEvent.cheapestInCountry ? "eventContainer-cheapestEvent" : "eventContainer")">
                 <div id="dateContainer">
                     <div>
                         <p class="dateText">@upcEvent.dayOfWeek</p>
@@ -30,13 +30,18 @@
                         <p class="dateText">@upcEvent.dayOfMonth @upcEvent.month</p>
                     </div>
                 </div>
+                @if(upcEvent.cheapestInCountry)
+                {
+                    <span id="buyWrap">Cheapest in @upcEvent.country</span>
+                }
+                
                 <div class="eventInfoContainer">
                     <p id="eventName"> @upcEvent.name</p>
                     <p id="venueName"><span id="atVenue">@@</span> @upcEvent.venue</p>
                     <p id="location">@upcEvent.city, @upcEvent.country</p>
                 </div>
                 <div id="viewTicketsContainer">
-                    <p id="minPriceTicket">From @upcEvent.minTicketPrice</p>
+                    <p id="minPriceTicket">From @upcEvent.minTicketPriceDisplay</p>
                     <button class="btn btn-sm" onclick="location.href='@Url.Action("Tickets","Home",new { eventId = @upcEvent.id})'">View tickets</button>
 
                 </div>

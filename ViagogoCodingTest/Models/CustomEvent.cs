@@ -18,7 +18,9 @@ namespace ViagogoCodingTest.Models
         public string venue { get; set; }
         public string city { get; set; }
         public string country { get; set; }
-        public string minTicketPrice { get; set; }
+        public string minTicketPriceDisplay { get; set; }
+        public double minTicketPriceAmount { get; set; }
+        public bool cheapestInCountry { get; set; }
         public IReadOnlyList<Listing> ticketListings { get; set; }
 
         public CustomEvent (int id, string name, DateTimeOffset date,string venueName, string city,string country,string minTicketPrice)
@@ -29,8 +31,8 @@ namespace ViagogoCodingTest.Models
             this.venue = venueName;
             this.city = city;
             this.country = country;
-           // convertCurrency(minTicketPrice);
-            this.minTicketPrice = minTicketPrice;
+            this.minTicketPriceDisplay = minTicketPrice;
+            this.minTicketPriceAmount = Double.Parse(minTicketPrice.Substring(1));
         }
 
         private void getDateDetail(DateTimeOffset date)
@@ -40,12 +42,6 @@ namespace ViagogoCodingTest.Models
             var dayOfWeekLong = date.DayOfWeek.ToString();
             this.dayOfWeek = dayOfWeekLong.Substring(0, 3);
             this.dayOfMonth = date.Day;
-        }
-
-        private void convertCurrency(string minTicketPrice)
-        {
-            CultureInfo uk = CultureInfo.GetCultureInfo("en-GB");
-
         }
 
     }

@@ -919,6 +919,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Artist.cs" />
+    <Compile Include="Models\Country.cs" />
     <Compile Include="Models\CustomEvent.cs" />
     <Compile Include="Models\CustomListing.cs" />
     <Compile Include="Models\ViagogoAPI.cs" />
