@@ -9,15 +9,15 @@ function goGreen() {
         "transition": "background-color 1s ease"
     });
 
-   
+
     setTimeout(function () {
         ctnr.css({
             "background-color": "#D6D5C9",
             "transition": "background-color 1s ease"
         })
     }, 1000);
-    
-   
+
+
 };
 
 window.setInterval(goGreen, 6000);
@@ -28,16 +28,16 @@ $(function () {
 });
 
 function hoverIn() {
-    $("#buyWrap").css({
+    $("#cheapestEventLabel").css({
         "left": "145px",
         "transition": "left 1s ease",
-        "opacity": "0.99",
-        "z-index":"-1"
+        "opacity": "1",
+        "z-index": "-1"
     });
 }
 
-function hoverOut () {
-    $("#buyWrap").css({
+function hoverOut() {
+    $("#cheapestEventLabel").css({
         "left": "0px",
         "transition": "left 1s ease",
         "z-index": "-1"

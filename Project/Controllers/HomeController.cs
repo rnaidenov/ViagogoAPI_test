@@ -30,7 +30,7 @@ namespace ViagogoCodingTest.Controllers
             
             foreach (var upcEvent in peteTong.eventsList)
             {    
-                var customEvent = new CustomEvent(upcEvent.Id.Value, upcEvent.Name, upcEvent.StartDate.Value, upcEvent.Venue.Name, upcEvent.Venue.City, upcEvent.Venue.Country.Name,upcEvent.MinTicketPrice.Display);
+                var customEvent = new CustomEvent(upcEvent);
                 events.artistEvents.Add(customEvent);         
             }
             events.getCountriesEvents();

@@ -10,16 +10,18 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <link href="~/Content/stylesheets/bootstrap.min.css" rel="stylesheet" />
-    <link href="~/Content/stylesheets/ListingsView.css" rel="stylesheet" />
+    <link href="~/Content/stylesheets/listingsView.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One|Righteous|Abel|Raleway" rel="stylesheet">
     <title>Tickets</title>
 </head>
 <body ng-controller="myCtrl as c">
 
     <div id="listingsWrap">
-        <h1>@Model.listingsEvent.Name</h1>
-        <h2>@Model.listingsEvent.Venue.Name</h2>
-        <p>@Model.listingsEventDate</p>
-
+        <div class="listingsHeader">
+            <h1>@Model.listingsEvent.Name</h1>
+            <h2>@Model.listingsEvent.Venue.Name</h2>
+            <p class="listingsHeader-dateLabel">@Model.listingsEventDate</p>
+        </div>
         
         <div id="ticketCounterWrap">
             <p>
@@ -36,25 +38,25 @@
             </p>
 
 
-            <input type="hidden" id="myHiddenValue" value="@Model.numberTickets" />
             <div id="numberTicketsWrap">
                 <span id="numberTickets">{{counter}}</span>
-            </div>
-            <span><img class="newTicket"</span>
 
-            <div id="ticketsListHeader">
-                <span id="sectionLabel">Section</span>
-                <span id="priceLabel">Price</span>
+                <span><img class="newTicket" /></span>
+
+                <div id="ticketsListHeader">
+                    <span id="sectionLabel">Section</span>
+                    <span id="priceLabel">Price</span>
+                </div>
             </div>
 
             <div  dir-paginate="listing in filteredData | itemsPerPage:10" id="eventsListWrap">
                 <div id="ticketOption">
                     <span id="seatingLabel">{{listing.section}}</span>
-                    <span id="ticketQuantityLabel">{{ticketsNeeded(listing)}}</span>
+                    <span class="ticketQuantityLabel">{{ticketsNeeded(listing)}}</span>
                     <span id="ticketPriceLabel">{{listing.price}}</span>
                 </div>
                 <div id="buyWrap">
-                   
+                    <span><img id="shoppingCartIcon" src="/Content/icons/shoppingCartIcon.png"/></span>
                 </div>
             </div>
 
@@ -63,9 +65,9 @@
                 direction-links="true"
                 boundary-links="true">
             </dir-pagination-controls>
-         
-
+        
         </div>
+    </div>
 
     
 </body>
@@ -76,4 +78,3 @@
 <script src="~/Scripts/jquery-1.9.1.min.js"></script>
 <script src="~/Scripts/bootstrap.min.js"></script>
 <script src="~/Scripts/listingsView.js"></script>
-<script src="~/Scripts/animations.js"></script>

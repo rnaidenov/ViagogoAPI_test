@@ -16,7 +16,6 @@ namespace ViagogoCodingTest.Models.Tests
         {
             CustomListing newCustomListing = new CustomListing("Box", 420, "GBP", 6);
             string rightPrice = "$516.6";
-
             Assert.AreEqual(rightPrice, newCustomListing.price);
         }
     }

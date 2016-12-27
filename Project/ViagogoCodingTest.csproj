@@ -143,6 +143,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\icons\shoppingCartIcon.png" />
     <Content Include="Content\icons\ticketIcon.png" />
     <Content Include="Content\icons\ticketIconAdd.png" />
     <Content Include="Content\icons\ticketIconRemove.png" />
@@ -150,7 +151,7 @@
     <Content Include="Content\stylesheets\bootstrap-theme.min.css" />
     <Content Include="Content\stylesheets\bootstrap.css" />
     <Content Include="Content\stylesheets\bootstrap.min.css" />
-    <Content Include="Content\stylesheets\ListingsView.css" />
+    <Content Include="Content\stylesheets\listingsView.css" />
     <Content Include="Content\stylesheets\mainView.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

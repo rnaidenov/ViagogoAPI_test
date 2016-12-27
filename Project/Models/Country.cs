@@ -21,7 +21,7 @@ namespace ViagogoCodingTest.Models
         {
             if (events.Count > 1)
             {
-                double price = events[0].minTicketPriceAmount;
+                decimal price = events[0].minTicketPriceAmount;
                 foreach (var artistEvent in events)
                 {
                     if (artistEvent.minTicketPriceAmount < price)

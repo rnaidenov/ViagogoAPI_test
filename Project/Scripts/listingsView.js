@@ -92,10 +92,14 @@ app.controller("myCtrl", function ($scope,DataService,TicketService) {
             $scope.filteredData = res;
         })
     })();
+    
+   
 
     $scope.ticketsNeeded = function (listing) {
         if ($scope.counter === 1 && listing.lastAvailable) {
+            $(".ticketQuantityLabel").toggleClass(".ticketQuantityLabel-last");
             return "Last available ticket";
+            
         }
         else if ($scope.counter === "Any" || $scope.counter === "5+") {
             var ticket;
@@ -107,17 +111,20 @@ app.controller("myCtrl", function ($scope,DataService,TicketService) {
             return listing.ticketsAvailable + " available " + ticket;
         }
         else if (listing.lastAvailable && $scope.counter !== 1) {
+            $(".ticketQuantityLabel").toggleClass(".ticketQuantityLabel-last");
             return "Last " + listing.ticketsAvailable + " available tickets";
+            
         }
         else {
             if ($scope.counter === 1) {
-                return $scope.counter + " available ticket";
+               return $scope.counter + " available ticket";
             }
             else {
-                return $scope.counter + " available tickets";
+               return $scope.counter + " available tickets";
             }
         }
-    }
+    };
+
 
     $scope.counter = "Any";
 

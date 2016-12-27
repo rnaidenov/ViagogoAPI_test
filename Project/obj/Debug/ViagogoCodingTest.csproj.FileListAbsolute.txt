@@ -57,3 +57,180 @@ C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\ViagogoCod
 C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\ViagogoCodingTest\bin\System.Net.Http.Primitives.xml
 C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\ViagogoCodingTest\bin\Tavis.UriTemplates.pdb
 C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\ViagogoCodingTest\obj\Debug\ViagogoCodingTest.csproj.App.config
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\ApplicationInsights.config
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\roslyn\csc.exe
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\roslyn\vbc.exe
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\roslyn\VBCSCompiler.exe
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\ViagogoCodingTest.dll.config
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\ViagogoCodingTest.dll
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\ViagogoCodingTest.pdb
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\GogoKit.dll
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\HalKit.dll
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\Microsoft.AI.Web.dll
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\Newtonsoft.Json.dll
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\System.Net.Http.Extensions.dll
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\System.Net.Http.Primitives.dll
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\System.Web.Helpers.dll
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\System.Web.Mvc.dll
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\System.Web.Razor.dll
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\System.Web.Webpages.dll
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\System.Web.Webpages.Razor.dll
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\Tavis.UriTemplates.dll
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\GogoKit.xml
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\HalKit.xml
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\Microsoft.AI.Web.xml
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\Newtonsoft.Json.xml
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\System.Net.Http.Extensions.xml
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\System.Net.Http.Primitives.xml
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\Tavis.UriTemplates.pdb
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\System.Web.Razor.xml
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\System.Web.Webpages.xml
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\System.Web.Webpages.Razor.xml
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\System.Web.Helpers.xml
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\bin\System.Web.Mvc.xml
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\obj\Debug\ViagogoCodingTest.csproj.App.config
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\obj\Debug\ViagogoCodingTest.csprojResolveAssemblyReference.cache
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\obj\Debug\ViagogoCodingTest.dll
+C:\Users\Rado\Desktop\test\ViagogoCodingTest\obj\Debug\ViagogoCodingTest.pdb
+C:\Users\Rado\Desktop\test\Project\obj\Debug\ViagogoCodingTest.csproj.App.config
+C:\Users\Rado\Desktop\test\Project\obj\Debug\ViagogoCodingTest.csprojResolveAssemblyReference.cache
+C:\Users\Rado\Desktop\test\Project\obj\Debug\ViagogoCodingTest.dll
+C:\Users\Rado\Desktop\test\Project\obj\Debug\ViagogoCodingTest.pdb
+C:\Users\Rado\Desktop\test\Project\bin\ApplicationInsights.config
+C:\Users\Rado\Desktop\test\Project\bin\roslyn\csc.exe
+C:\Users\Rado\Desktop\test\Project\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Rado\Desktop\test\Project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Rado\Desktop\test\Project\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Rado\Desktop\test\Project\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Rado\Desktop\test\Project\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Rado\Desktop\test\Project\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Rado\Desktop\test\Project\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Rado\Desktop\test\Project\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Rado\Desktop\test\Project\bin\roslyn\vbc.exe
+C:\Users\Rado\Desktop\test\Project\bin\roslyn\VBCSCompiler.exe
+C:\Users\Rado\Desktop\test\Project\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Rado\Desktop\test\Project\bin\ViagogoCodingTest.dll.config
+C:\Users\Rado\Desktop\test\Project\bin\ViagogoCodingTest.dll
+C:\Users\Rado\Desktop\test\Project\bin\ViagogoCodingTest.pdb
+C:\Users\Rado\Desktop\test\Project\bin\GogoKit.dll
+C:\Users\Rado\Desktop\test\Project\bin\HalKit.dll
+C:\Users\Rado\Desktop\test\Project\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Rado\Desktop\test\Project\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Rado\Desktop\test\Project\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Rado\Desktop\test\Project\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Rado\Desktop\test\Project\bin\Microsoft.AI.Web.dll
+C:\Users\Rado\Desktop\test\Project\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Rado\Desktop\test\Project\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Rado\Desktop\test\Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Rado\Desktop\test\Project\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Rado\Desktop\test\Project\bin\Newtonsoft.Json.dll
+C:\Users\Rado\Desktop\test\Project\bin\System.Net.Http.Extensions.dll
+C:\Users\Rado\Desktop\test\Project\bin\System.Net.Http.Primitives.dll
+C:\Users\Rado\Desktop\test\Project\bin\System.Web.Helpers.dll
+C:\Users\Rado\Desktop\test\Project\bin\System.Web.Mvc.dll
+C:\Users\Rado\Desktop\test\Project\bin\System.Web.Razor.dll
+C:\Users\Rado\Desktop\test\Project\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Rado\Desktop\test\Project\bin\System.Web.Webpages.dll
+C:\Users\Rado\Desktop\test\Project\bin\System.Web.Webpages.Razor.dll
+C:\Users\Rado\Desktop\test\Project\bin\Tavis.UriTemplates.dll
+C:\Users\Rado\Desktop\test\Project\bin\GogoKit.xml
+C:\Users\Rado\Desktop\test\Project\bin\HalKit.xml
+C:\Users\Rado\Desktop\test\Project\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Rado\Desktop\test\Project\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Rado\Desktop\test\Project\bin\Microsoft.AI.Web.xml
+C:\Users\Rado\Desktop\test\Project\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Rado\Desktop\test\Project\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Rado\Desktop\test\Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Rado\Desktop\test\Project\bin\Newtonsoft.Json.xml
+C:\Users\Rado\Desktop\test\Project\bin\System.Net.Http.Extensions.xml
+C:\Users\Rado\Desktop\test\Project\bin\System.Net.Http.Primitives.xml
+C:\Users\Rado\Desktop\test\Project\bin\Tavis.UriTemplates.pdb
+C:\Users\Rado\Desktop\test\Project\bin\System.Web.Razor.xml
+C:\Users\Rado\Desktop\test\Project\bin\System.Web.Webpages.xml
+C:\Users\Rado\Desktop\test\Project\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Rado\Desktop\test\Project\bin\System.Web.Webpages.Razor.xml
+C:\Users\Rado\Desktop\test\Project\bin\System.Web.Helpers.xml
+C:\Users\Rado\Desktop\test\Project\bin\System.Web.Mvc.xml
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\ApplicationInsights.config
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\roslyn\csc.exe
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\roslyn\vbc.exe
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\roslyn\VBCSCompiler.exe
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\ViagogoCodingTest.dll.config
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\ViagogoCodingTest.dll
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\ViagogoCodingTest.pdb
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\GogoKit.dll
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\HalKit.dll
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\Microsoft.AI.Web.dll
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\Newtonsoft.Json.dll
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\System.Net.Http.Extensions.dll
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\System.Net.Http.Primitives.dll
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\System.Web.Helpers.dll
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\System.Web.Mvc.dll
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\System.Web.Razor.dll
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\System.Web.Webpages.dll
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\System.Web.Webpages.Razor.dll
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\Tavis.UriTemplates.dll
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\GogoKit.xml
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\HalKit.xml
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\Microsoft.AI.Web.xml
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\Newtonsoft.Json.xml
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\System.Net.Http.Extensions.xml
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\System.Net.Http.Primitives.xml
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\Tavis.UriTemplates.pdb
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\System.Web.Razor.xml
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\System.Web.Webpages.xml
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\System.Web.Webpages.Razor.xml
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\System.Web.Helpers.xml
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\bin\System.Web.Mvc.xml
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\obj\Debug\ViagogoCodingTest.csproj.App.config
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\obj\Debug\ViagogoCodingTest.csprojResolveAssemblyReference.cache
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\obj\Debug\ViagogoCodingTest.dll
+C:\Users\Rado\Documents\Visual Studio 2015\Projects\ViagogoCodingTest\Project\obj\Debug\ViagogoCodingTest.pdb

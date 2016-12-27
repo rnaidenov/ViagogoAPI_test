@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width" />
     <link href="~/Content/stylesheets/bootstrap.min.css" rel="stylesheet" />
     <link href="~/Content/stylesheets/mainView.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300|Pathway+Gothic+One|Righteous|Raleway|Abel" rel="stylesheet">
     <title>Index</title>
 </head>
 <body>
@@ -25,14 +25,14 @@
                     <div>
                         <p class="dateText">@upcEvent.dayOfWeek</p>
                     </div>
-                    <span id="lineSeparator"></span>
+                    <span class="lineSeparator"></span>
                     <div>
-                        <p class="dateText">@upcEvent.dayOfMonth @upcEvent.month</p>
+                        <p class="dateText">@upcEvent.dayOfMonth @upcEvent.month | @upcEvent.year</p>
                     </div>
                 </div>
                 @if(upcEvent.cheapestInCountry)
                 {
-                    <span id="buyWrap">Cheapest in @upcEvent.country</span>
+                    <span id="cheapestEventLabel" style="opacity:0">Cheapest in @upcEvent.country</span>
                 }
                 
                 <div class="eventInfoContainer">
@@ -43,7 +43,6 @@
                 <div id="viewTicketsContainer">
                     <p id="minPriceTicket">From @upcEvent.minTicketPriceDisplay</p>
                     <button class="btn btn-sm" onclick="location.href='@Url.Action("Tickets","Home",new { eventId = @upcEvent.id})'">View tickets</button>
-
                 </div>
             </div>
         </div>

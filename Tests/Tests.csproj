@@ -55,7 +55,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ViagogoCodingTest\ViagogoCodingTest.csproj">
+    <ProjectReference Include="..\Project\ViagogoCodingTest.csproj">
       <Project>{5E77980F-EB2E-4E21-9D88-6C42365EF313}</Project>
       <Name>ViagogoCodingTest</Name>
     </ProjectReference>

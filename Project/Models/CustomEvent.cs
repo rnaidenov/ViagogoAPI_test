@@ -15,24 +15,25 @@ namespace ViagogoCodingTest.Models
         public string dayOfWeek { get; set; }
         public int dayOfMonth { get; set; }
         public string month { get; set; }
+        public int year { get; set; }
         public string venue { get; set; }
         public string city { get; set; }
         public string country { get; set; }
         public string minTicketPriceDisplay { get; set; }
-        public double minTicketPriceAmount { get; set; }
+        public decimal minTicketPriceAmount { get; set; }
         public bool cheapestInCountry { get; set; }
         public IReadOnlyList<Listing> ticketListings { get; set; }
 
-        public CustomEvent (int id, string name, DateTimeOffset date,string venueName, string city,string country,string minTicketPrice)
+        public CustomEvent (Event upcEvent)
         {
-            this.id = id;
-            this.name = name;
-            getDateDetail(date);
-            this.venue = venueName;
-            this.city = city;
-            this.country = country;
-            this.minTicketPriceDisplay = minTicketPrice;
-            this.minTicketPriceAmount = Double.Parse(minTicketPrice.Substring(1));
+            this.id = upcEvent.Id.Value;
+            this.name = upcEvent.Name;
+            getDateDetail(upcEvent.StartDate.Value);
+            this.venue = upcEvent.Venue.Name;
+            this.city = upcEvent.Venue.City;
+            this.country = upcEvent.Venue.Country.Name;
+            this.minTicketPriceDisplay = upcEvent.MinTicketPrice.Display;
+            this.minTicketPriceAmount = upcEvent.MinTicketPrice.Amount.Value;
         }
 
         private void getDateDetail(DateTimeOffset date)
@@ -42,6 +43,7 @@ namespace ViagogoCodingTest.Models
             var dayOfWeekLong = date.DayOfWeek.ToString();
             this.dayOfWeek = dayOfWeekLong.Substring(0, 3);
             this.dayOfMonth = date.Day;
+            this.year = date.Year;
         }
 
     }

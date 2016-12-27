@@ -1,6 +1,15 @@
 ﻿body {
 }
 
+h1 {
+    color: #00264d;
+}
+
+h2{
+    color: #66004d;
+    font-weight:600
+}
+
 #ticketIcon {
    width:25px;
    height:25px;
@@ -12,7 +21,7 @@
    visibility:hidden; 
    width:20px;
    height:20px;
-   margin-top:-20px;
+   margin-top:20px;
    margin-left:-9px;
    margin-bottom:0px;
    position:absolute;
@@ -22,7 +31,7 @@
 .newTicket-add {
    width:20px;
    height:20px;
-   margin-top:-25px;
+   margin-top:15px;
    margin-left:-9px;
    margin-bottom:0px;
    position:absolute;
@@ -35,7 +44,7 @@
 .newTicket-remove {
    width:20px;
    height:20px;
-   margin-top:-15px;
+   margin-top:25px;
    margin-left:-9px;
    margin-bottom:0px;
    position:absolute;
@@ -48,6 +57,7 @@
 
 #ticketCounterWrap {
     margin-top:50px;
+    font-family: "Abel";
 }
 
 #numberTicketsWrap {
@@ -55,8 +65,16 @@
 }
 
 #numberTickets{
+    font-family: 'Pathway Gothic One';
     font-size:30px;
     color:#422040;
+    padding-left:15px;
+}
+
+#eventsListWrap {
+    overflow:hidden;
+    position:relative;
+    font-family: 'Raleway';
 }
 
 #ticketsListHeader {
@@ -66,37 +84,54 @@
     margin-top:40px;
     background-color:#18314F;
     position:relative;
-}
-
-#eventsListWrap {
-    overflow:hidden;
-    position:relative;
+    font-family: 'Pathway Gothic One';
+    font-size:18px;
 }
 
 #ticketOption {
     width:500px;
     height:70px;
     background-color:#384E77;
-    border-bottom-color:white;
     position:relative;
     margin:auto;
-    padding-top:10px;
+    padding-top:22px;
+    margin-bottom:-20px;
     z-index:1;
+}
+
+.listingsHeader {
+    font-family: 'Raleway', sans-serif;
+    color:#131515;
+}
+
+.listingsHeader-dateLabel {
+    font-family: 'Pathway Gothic One', "sans-serif";
+    font-size:20px;
+    color:#3d3d5c;
+    letter-spacing:2px;
 }
 
 #buyWrap {
     width:150px;
     height:70px;
     left:-50px;
-    background-color:darkseagreen;
+    background-color:#4e74bb;
     position:relative;
     margin-top:-70px;
-    margin-left:780px;
+    margin-left:720px;
     -webkit-transition: left 1s;
     -moz-transition: left 1s;
     -o-transition: left 1s;
     transition: left 1s;
     z-index:-1;
+}
+
+#shoppingCartIcon {
+    width:50px;
+    height:50px;
+    position:relative;
+    margin-left:68px;
+    margin-top:10px;
 }
 
 
@@ -107,7 +142,7 @@
 #seatingLabel {
     color:#0E1B2C;
     font-size:15px;
-    margin-left:-350px;
+    margin-left:-345px;
     float:none;
     position:relative;
 }
@@ -115,16 +150,14 @@
 #sectionLabel {
     color:white;
     position:absolute;
-    margin-top:5px;
-    margin-left:-200px;
+    margin-top:2.5px;
+    margin-left:-194px;
 }
 
-/*#37000A*/
-
-#ticketQuantityLabel {
+.ticketQuantityLabel {
     position:relative;
     display:block;
-    margin-left:25px;
+    margin-left:46px;
     margin-top:-18px;
     float:none;
     color:#450E24;
@@ -132,36 +165,30 @@
 }
 
 
-/*
-#ticketQuantityLabel-warn {
+.ticketQuantityLabel-last {
     position:relative;
     display:block;
-    margin-left:25px;
+    margin-left:46px;
     margin-top:-18px;
     float:none;
     color:#450E24;
-    font-size:15px;
-    animation: warn 1s linear infinite;
+    font-size:12px;
 }
 
-@keyframes warn {  
-  50% { opacity: 0; }
-}*/
 
 #ticketPriceLabel{
     color:#0E1B2C;
     position:relative;
     margin-top:-19px;
-    margin-left:395px;
+    margin-left:380px;
     display:block;
-
 }
 
 #priceLabel {
     color:white;
-    margin-left:180px;
+    margin-left:175px;
     position:absolute;
-    margin-top:5px;
+    margin-top:2.5px;
 }
 
 .form-control {
