@@ -1,4 +1,8 @@
-﻿h1 {
+﻿body{
+    background-color:#e6e6e6;
+}
+
+h1 {
     text-align: center;
     padding: 50px 0px 0px 0px;
     font-family: 'Josefin Sans', sans-serif;
